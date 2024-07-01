@@ -1,0 +1,110 @@
+:root{
+    --gris: #ECF0F1 ;
+    --amarilo:#F4D03F;
+    --blanco: #FDFEFE ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-size: 3rem;
+   
+}
+.principal{
+    height: 50vh;
+    
+}
+.encabezado{
+    height: 100%;
+    display: flex;
+    position: relative;
+  
+}
+
+.logo{
+    width: 25vw;
+    height: 100%;
+    background-color: black;
+    color: var(--blanco);
+    padding: 2rem;
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    display: f;
+}
+@media(max-width:730px){
+    .encabezado{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+    }
+}
+.navegacion{
+    width: 100%;
+    display:  flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris);
+    height: 7.5rem;
+}
+.navegacion a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+.imagen{
+    width: 100%;
+    background-image: url(../img/inicio.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  
+    height: calc(50vh - 75px);
+    
+}
+
+.titulo{
+    position: absolute;
+    top: 20vh;
+    left: 14vw;
+    color: var(--blanco);
+    font-weight: lighter;
+    font-size: 4rem;
+    font-weight:normal;
+    line-height: 4rem;
+}
+@media(max-width:730px){
+    .titulo{
+       top: 30vh;
+    }
+}
+.titulo .nombre{
+    display: block;
+    font-weight: bold;
+}
+.oficio{
+    background-color: var(--amarilo);
+    display: block;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.oficio:hover{
+    cursor: pointer;
+    background-color: #F7DC6F;
+}
